@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Gadgets Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Electronic Gadgets</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="todo.html">To-Do</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to our electronic gadgets portfolio. We showcase the latest and greatest gadgets with advanced technology.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Gadgets</h2>
+      <div class="gadget-grid">
+        <div class="gadget">
+          <img src="https://images.tv9hindi.com/wp-content/uploads/2024/08/redmi-13-5g.jpg"width="250px" height="200px" alt="Smartphone" class="gadget-img">
+          <h3>Smartphone</h3>
+          <p>Latest model with 5G and AI camera.</p>
+        </div>
+        <div class="gadget">
+          <img src="https://cdn.mos.cms.futurecdn.net/9DG5J9qLzaTgnyMoM3Vk4A-1200-80.jpg" width="250px" height="200px"alt="Laptop" class="gadget-img">
+          <h3>Laptop</h3>
+          <p>High-performance laptop with advanced cooling system.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="Phonenumber">Phonenumber</label>
+        <input type="text" id="Phonenumber" required>
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Electronic Gadgets</p>
+  </footer>
+
+  <script>
+    // Select the form
+    const form = document.getElementById('contactForm');
+
+    // Add an event listener for the form submission
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      alert('Message sent successfully'); // Display the success message
+      form.reset(); // Optionally, reset the form fields
+    });
+  </script>
+</body>
+</html>

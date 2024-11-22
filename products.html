@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="todo.html">To-Do</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filters">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="camera">camera</option>
+        <option value="Television">Television</option>
+        <option value="Headphones">Headphones</option>
+        <option value="speaker">speaker</option>
+        
+      </select>
+
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="price">Price</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+
+    <div class="product-list">
+      <div class="product" data-category="phone" data-price="999" data-rating="4.5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk84zsi-vMC4zMyhxzFyLNgiHu_BVhSz9ioA&s" height="300px" width="200px" alt="Smartphone" class="product-img">
+        <h3>Camera</h3>
+        <p>Price: $999 | Rating: 4.5</p>
+      </div>
+      <div class="product" data-category="Television" data-price="1499" data-rating="4.8">
+        <img src="https://cityfurnish.com/blog/wp-content/uploads/2022/02/tv-627876_1280-1024x682-1-1200x799.jpg" height="300px" width="300px"alt="Gaming Laptop" class="product-img">
+        <h3>Televison</h3>
+        <p>Price: $1499 | Rating: 4.8</p>
+      </div>
+      <div class="product" data-category="headphone" data-price="500" data-rating="4.8">
+        <img src="https://shop.zebronics.com/cdn/shop/files/zeb-aeon-blue-pic1_aa2df333-7bfa-4542-abdf-3378acb58774.jpg?v=1724302534&width=2000" height="300px" width="300px"alt="Gaming Laptop" class="product-img">
+        <h3>Headphones</h3>
+        <p>Price: $500 | Rating: 4.8</p>
+      </div>
+      <div class="product" data-category="speaker" data-price="799" data-rating="4.8">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkzm330_QXVLpQJnT6jKW3ixSYYI9Vka9t6Q&s"height="300px" width="300px" alt="Gaming Laptop" class="product-img">
+        <h3>Speaker</h3>
+        <p>Price: $799 | Rating: 4.8</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Electronic Gadgets</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
